@@ -3,7 +3,13 @@
         <el-header>
             <Header></Header>
         </el-header>
-        <el-main>Main</el-main>
+        <el-main>
+            <div>
+              <a href="javascript:;" @click="$store.dispatch('switch_dialog')">点击</a>
+              <!-- <a href="javascript:;"  @click="$store.commit('switch_dialog')">点击</a> -->
+              <t-dialog></t-dialog>
+            </div>
+        </el-main>
         <el-footer>
             <Footer></Footer>
         </el-footer>
@@ -12,13 +18,17 @@
 <script>
 import Header from "./header";
 import Footer from "./footer";
+import dialog from "./dialog";
 export default {
   data() {
-    return {};
+    return {
+      show: false
+    };
   },
   components: {
     Header,
-    Footer
+    Footer,
+    "t-dialog": dialog
   }
 };
 </script>
