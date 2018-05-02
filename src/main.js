@@ -11,22 +11,12 @@ Vue.use(VueI18n)
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 
-const messages = {
-  zh: {
-    message: {
-      hello: '好好学习，天天向上！'
-    }
-  },
-  en: {
-    message: {
-      hello: 'good good study, day day up!'
-    }
-  }
-}
-
 const i18n = new VueI18n({
   locale: 'zh', // 语言标识
-  messages
+  messages: {
+    'zh': require('./locale/zh'),
+    'en': require('./locale/en')
+  }
 })
 
 /* eslint-disable no-new */

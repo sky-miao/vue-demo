@@ -4,7 +4,13 @@
             <Header></Header>
         </el-header>
         <el-main>
-          <h1 style="font-size: 16px; text-align: center;">{{ $t("message.hello") }}</h1>
+          <div style="margin: 20px;">
+            <h1>{{$t("message.title")}}</h1>
+            <input style="width: 300px;" class="form-control" :placeholder="$t('placeholder.enter')">
+            <ul>
+              <li v-for="brand in brands" :key="brand">{{brand}}</li>
+            </ul>
+          </div>
         </el-main>
         <el-footer>
             <Footer></Footer>
@@ -16,7 +22,14 @@ import Header from "./header";
 import Footer from "./footer";
 export default {
   data() {
-    return {};
+    return {
+      brands: [
+        this.$t("brands.nike"),
+        this.$t("brands.adi"),
+        this.$t("brands.nb"),
+        this.$t("brands.ln")
+      ]
+    };
   },
   components: {
     Header,
@@ -35,7 +48,5 @@ export default {
 .el-main {
   background-color: #e9eef3;
   color: #333;
-  text-align: center;
-  line-height: 160px;
 }
 </style>
