@@ -10,5 +10,15 @@ module.exports = {
         adi: 'Adidas',
         nb: 'New Banlance',
         ln: 'LI Ning'
+    },
+    test: "test-language",
+    info: 'cancel',
+    layer: {
+        toggle: 'Switch to Chinese?',
+        tips: 'tips'
+    },
+    button: {
+        ok: 'ok',
+        cancel: 'cancel'
     }
 }

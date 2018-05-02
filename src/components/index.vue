@@ -11,6 +11,7 @@
               <li v-for="brand in brands" :key="brand">{{brand}}</li>
             </ul>
           </div>
+          <buttonTemplate></buttonTemplate>
         </el-main>
         <el-footer>
             <Footer></Footer>
@@ -20,6 +21,7 @@
 <script>
 import Header from "./header";
 import Footer from "./footer";
+import buttonTemplate from "./button";
 export default {
   data() {
     return {
@@ -33,7 +35,8 @@ export default {
   },
   components: {
     Header,
-    Footer
+    Footer,
+    buttonTemplate
   }
 };
 </script>

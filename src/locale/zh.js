@@ -11,5 +11,15 @@ module.exports = {
         adi: '阿迪达斯',
         nb: '新百伦',
         ln: '李宁'
+    },
+    test:"测试",
+    info: '信息',
+    layer:{
+        toggle: '是否切换成英文？',
+        tips: '提示'
+    },
+    button:{
+        ok: '确定',
+        cancel:'取消'
     }
 }
