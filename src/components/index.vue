@@ -3,7 +3,9 @@
         <el-header>
             <Header></Header>
         </el-header>
-        <el-main>Main</el-main>
+        <el-main>
+          <h1 style="font-size: 16px; text-align: center;">{{ $t("message.hello") }}</h1>
+        </el-main>
         <el-footer>
             <Footer></Footer>
         </el-footer>
