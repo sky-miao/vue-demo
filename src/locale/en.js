@@ -1,9 +1,12 @@
 module.exports = {
     message: {
-        title: 'Sport Brands'
+        hello: 'Good good study, day day up!',
+        title: 'Sport Brands',
+        title1: 'Language'
     },
     placeholder: {
-        enter: 'Please type in your favorite brand'
+        enter: 'Please type in your favorite brand',
+        enterInput: 'Please enter your preferred language.'
     },
     brands: {
         nike: 'Nike',
@@ -20,5 +23,9 @@ module.exports = {
     button: {
         ok: 'ok',
         cancel: 'cancel'
+    },
+    language: {
+        zh: "Chinese",
+        en: "English"
     }
 }

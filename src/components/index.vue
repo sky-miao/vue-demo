@@ -4,6 +4,7 @@
             <Header></Header>
         </el-header>
         <el-main>
+          <h1>{{$t("message.hello")}}</h1>
           <div style="margin: 20px;">
             <h1>{{$t("message.title")}}</h1>
             <input style="width: 300px;" class="form-control" :placeholder="$t('placeholder.enter')">
@@ -12,6 +13,7 @@
             </ul>
           </div>
           <buttonTemplate></buttonTemplate>
+          <selectTemplate></selectTemplate>
         </el-main>
         <el-footer>
             <Footer></Footer>
@@ -22,6 +24,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import buttonTemplate from "./button";
+import selectTemplate from "./select";
 export default {
   data() {
     return {
@@ -36,7 +39,8 @@ export default {
   components: {
     Header,
     Footer,
-    buttonTemplate
+    buttonTemplate,
+    selectTemplate
   }
 };
 </script>
