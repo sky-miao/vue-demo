@@ -6,18 +6,18 @@
 
 <script>
 export default {
-  name: "App",
-  data() {
-    return {};
+  name: 'App',
+  data () {
+    return {}
   }
-};
+}
 </script>
 
 <style>
-@import "./assets/css/clear.less";
-@import "./assets/css/base.less";
+@import './assets/css/clear.less';
+@import './assets/css/base.less';
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

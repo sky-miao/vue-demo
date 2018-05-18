@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 export default {
   methods: {
-    handleClose() {
-      this.$store.dispatch("switch_dialog");
-    },
+    handleClose () {
+      this.$store.dispatch('switch_dialog')
+    }
     // ...mapMutations({
     //   switch_dialog: "handleClose(false)" // 映射 this.increment() 为 this.$store.commit('increment')
     // })
@@ -28,5 +28,5 @@ export default {
     //   return this.$store.state.dialog.show;
     // }
   }
-};
+}
 </script>

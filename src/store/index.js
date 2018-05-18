@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import vuex from 'vuex'
-Vue.use(vuex);
+// 引入某个store对象
+import dialogStore from './dialog_store.js'
 
-import dialog_store from './dialog_store.js';//引入某个store对象
+Vue.use(vuex)
 
 export default new vuex.Store({
-    modules: {
-        dialog: dialog_store,
-    }
+  modules: {
+    dialog: dialogStore
+  }
 })

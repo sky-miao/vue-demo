@@ -26,31 +26,31 @@
     </el-container>
 </template>
 <script>
-import Header from "./header";
-import Footer from "./footer";
-import dialog from "./dialog";
-import buttonTemplate from "./button";
-import selectTemplate from "./select";
+import Header from './header'
+import Footer from './footer'
+import dialog from './dialog'
+import buttonTemplate from './button'
+import selectTemplate from './select'
 export default {
-  data() {
+  data () {
     return {
       show: false,
       brands: [
-        this.$t("brands.nike"),
-        this.$t("brands.adi"),
-        this.$t("brands.nb"),
-        this.$t("brands.ln")
+        this.$t('brands.nike'),
+        this.$t('brands.adi'),
+        this.$t('brands.nb'),
+        this.$t('brands.ln')
       ]
-    };
+    }
   },
   components: {
     Header,
     Footer,
-    "t-dialog": dialog,
+    't-dialog': dialog,
     buttonTemplate,
     selectTemplate
   }
-};
+}
 </script>
 <style>
 .el-header,

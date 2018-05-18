@@ -2,27 +2,26 @@
     <div class="select-wrap fr">
       <label class="lg-show" for="">Language: </label>
       <select class="selset-option" @change="chooseLanguage()">
-        <option :selected="selectLangeage=='zh'?'selected':''" >中文</option>
-        <option :selected="selectLangeage=='en'?'selected':''" >English</option>
+        <option :selected="selectLangeage=='en'?'selected':''" >中文</option>
+        <option :selected="selectLangeage=='zh'?'selected':''" >English</option>
       </select>
     </div>
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
-      selectLangeage: "en"
-    };
+      selectLangeage: 'en'
+    }
   },
-  mounted() {
+  mounted () {
   },
   methods: {
-    chooseLanguage() {
-      let locale = this.$i18n.locale;
-      locale === "zh" ? (this.$i18n.locale = "en", this.selectLangeage='en') : (this.$i18n.locale = "zh",  this.selectLangeage='zh');
+    chooseLanguage () {
+      this.$i18n.locale = this.$i18n.locale === 'zh' ? 'zh' : 'en'
     }
   }
-};
+}
 </script>
 <style lang="less">
 select {
