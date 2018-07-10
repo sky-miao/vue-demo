@@ -26,11 +26,11 @@
     </el-container>
 </template>
 <script>
-import Header from './header'
-import Footer from './footer'
-import dialog from './dialog'
-import buttonTemplate from './button'
-import selectTemplate from './select'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import dialog from '../components/dialog'
+import buttonTemplate from '../components/button'
+import selectTemplate from '../components/select'
 export default {
   data () {
     return {
