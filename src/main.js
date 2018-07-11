@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { Container, Header, Main, Footer, Dialog } from 'element-ui'
+import { Dialog } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 import VueI18n from 'vue-i18n'
@@ -13,10 +13,6 @@ import vuex from 'vuex'
 Vue.use(vuex)
 Vue.use(VueI18n)
 
-Vue.use(Container)
-Vue.use(Header)
-Vue.use(Main)
-Vue.use(Footer)
 Vue.use(Dialog)
 
 Vue.config.productionTip = false

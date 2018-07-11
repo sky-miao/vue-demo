@@ -20,7 +20,7 @@ export default {
     // })
   },
   computed: {
-    // 这里的三点叫做 : 扩展运算符
+    // The three points here are called: extension operators
     ...mapState({
       show: state => state.dialog.show
     })
