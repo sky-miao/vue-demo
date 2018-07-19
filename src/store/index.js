@@ -4,6 +4,7 @@ import vuex from 'vuex'
 import createLogger from 'vuex/dist/logger'
 // Introduce a store object
 import dialogStore from './modules/dialog_store.js'
+import markets from './modules/markets.js'
 
 Vue.use(vuex)
 
@@ -12,7 +13,8 @@ const debug = process.env.NODE_ENV !== 'production'
 
 export default new vuex.Store({
   modules: {
-    dialog: dialogStore
+    dialog: dialogStore,
+    markets
   },
   // Displays status changes for vuex in a development environment
   plugins: debug ? [createLogger()] : []

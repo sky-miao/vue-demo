@@ -5,6 +5,7 @@
       <!-- <a href="javascript:;" @click="$store.dispatch('switch_dialog')">点击</a> -->
       <a href="javascript:;" @click="open(true)">点击</a>
       <t-dialog></t-dialog>
+      <List></List>
     </div>
     <Footer></Footer>
   </div>
@@ -13,6 +14,7 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
 import dialog from '../components/dialog'
+import List from './list/list'
 import { mapActions } from 'vuex'
 export default {
   data () {
@@ -22,7 +24,8 @@ export default {
   components: {
     Header,
     Footer,
-    't-dialog': dialog
+    't-dialog': dialog,
+    List
   },
   methods: {
     ...mapActions(['switch_dialog']),

@@ -3,17 +3,20 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { Dialog } from 'element-ui'
+import { Dialog, Table, TableColumn } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 import VueI18n from 'vue-i18n'
 import { getCookie } from './untils/cookie'
 import vuex from 'vuex'
+require('./api/mock')
 
 Vue.use(vuex)
 Vue.use(VueI18n)
 
 Vue.use(Dialog)
+Vue.use(Table)
+Vue.use(TableColumn)
 
 Vue.config.productionTip = false
 
