@@ -14,8 +14,9 @@ export default {
 .footer-page-wrap{
   flex: 0 0 auto;
   background: #081725;
-  height: 60px;
-  line-height: 60px;
+  height: 0.6rem;
+  line-height: 0.6rem;
   text-align: center;
+  color: #fff;
 }
 </style>

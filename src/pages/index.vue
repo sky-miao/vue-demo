@@ -6,6 +6,9 @@
       <a href="javascript:;" @click="open(true)">点击</a>
       <t-dialog></t-dialog>
       <List></List>
+      <el-button>默认按钮</el-button>
+      <el-button type="primary">默认按钮</el-button>
+      <span>afsddddddddddddddddddddd你你你你《、</span>
     </div>
     <Footer></Footer>
   </div>
@@ -37,4 +40,5 @@ export default {
 </script>
 <style lang="less">
 @import '../assets/css/page.less';
+
 </style>
