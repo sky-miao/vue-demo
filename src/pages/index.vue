@@ -7,6 +7,7 @@
       <t-dialog></t-dialog>
       <List></List>
     </div>
+    <div class="div1"></div>
     <Footer></Footer>
   </div>
 </template>
@@ -37,4 +38,9 @@ export default {
 </script>
 <style lang="less">
 @import '../assets/css/page.less';
+.div1{
+  width: 100px;
+  height: 100px;
+  background: #666;
+}
 </style>

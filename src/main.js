@@ -9,6 +9,7 @@ import store from './store'
 import VueI18n from 'vue-i18n'
 import { getCookie } from './untils/cookie'
 import vuex from 'vuex'
+import 'lib-flexible'
 require('./api/mock')
 
 Vue.use(vuex)

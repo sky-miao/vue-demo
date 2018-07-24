@@ -21,6 +21,7 @@ export default {
   background: #081725;
   height: 60px;
   line-height: 60px;
+  font-size: 28px; /*px*/
   text-align: center;
 }
 </style>
